@@ -22,7 +22,7 @@
         top: 4px;
         background: none;
         border: none;
-        display: none;
+        display: block;
         
     }
     #btn-bars{
@@ -41,6 +41,41 @@
         top: 180px;
         font-size: 48px;
         margin-left: 0;
+    }
+    #banner h1 small{
+        font-size: 22px;
+    }
+
+    #news h2{
+        font-size: 32px;
+    }
+    #news hr{
+       border-width: 4px;
+    }
+    .owl-carousel .owl-wrapper-outer { /*.owl-stage-outer*/
+        margin-left: 15px;
+    }
+    
+    .thumbnails{
+        text-align: center;
+    }
+    #news .thumbnails .item-inner img{
+        width: 80%;
+        
+    }
+    #btn-news-prev, #btn-news-next{
+        background: none;
+        border: none;
+        color: #5e2699;
+        font-size: 48px;
+        display: block;
+        position: absolute;
+        top: 130px;
+        z-index: 4;
+        outline: 0;
+    }
+    #btn-news-next{
+        right: 10px;
     }
 
 
