@@ -213,9 +213,9 @@
 								</address>
 								<p class="hidden-xs"><a href="tel:1855ORLCITY"><i class="fa fa-phone"></i>1.855.ORL.CITY</a></p>
 
-								<div class="row-fluid">
+								<div class="row-fluid visible-xs">
 
-									<div class="col-xs-6 hidden-sm-up">
+									<div class="col-xs-6">
 										<a href="#" class="btn btn-footer"><i class="fa fa-map-marker"></i>Location</a>
 									</div>
 									<div class="col-xs-6">
@@ -231,7 +231,7 @@
 									<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
 									<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
 									<li><a href="#" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
-									<li><a href="#" target="_blank"><i class="fa fa-chevron-up"></i></a></li>
+									<li class="visible-xs"><a href="#" id="page-up" target="_blank"><i class="fa fa-chevron-up"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -295,7 +295,13 @@
 
             $('#btn-news-next').on("click", function(){
 				owl.next();
-            });
+			});
+			$("#page-up").on("click", function(event))
+            
+            $("body").animate({
+               scrollTop:0 
+            }, 1000);
+            event.preventDefault();
 		});
 	</script>
 </body>
