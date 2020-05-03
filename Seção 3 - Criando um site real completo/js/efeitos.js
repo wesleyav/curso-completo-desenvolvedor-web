@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
     $("#logotipo").on("mouseover", function () {
@@ -26,7 +25,7 @@ $(document).ready(function () {
                 items: 1
             },
             480: {
-                items: 4
+                items: 2
             },
             768: {
                 items: 4
